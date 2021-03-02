@@ -1,0 +1,84 @@
+levels:
+  mymap:
+    drawing:
+      filename: world_gazebo.png
+    elevation: 0
+    flattened_x_offset: 0
+    flattened_y_offset: 0
+    floors:
+      - parameters: {texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [12, 13, 14, 15, 16, 17, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    lanes:
+      - [25, 27, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [27, 28, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [28, 29, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [29, 24, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [28, 30, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [30, 31, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [31, 32, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [32, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+    layers:
+      map: {filename: world.png, meters_per_pixel: 0.05, rotation: 1.5719, translation_x: -13.75, translation_y: 15.2, visible: true}
+    measurements:
+      - [0, 1, {distance: [3, 1]}]
+    vertices:
+      - [469.011, 97.026, 0, ""]
+      - [469.015, 178.997, 0, ""]
+      - [469.085, 277.824, 0, ""]
+      - [469.531, 308.408, 0, ""]
+      - [512.924, 334.993, 0, ""]
+      - [512.924, 511.667, 0, ""]
+      - [469.504, 536.205, 0, ""]
+      - [469.504, 566.577, 0, ""]
+      - [307.182, 660.716, 0, ""]
+      - [143.142, 567.917, 0, ""]
+      - [142.89, 536.335, 0, ""]
+      - [99.07899999999999, 510.526, 0, ""]
+      - [99.54600000000001, 333.198, 0, ""]
+      - [142.698, 309.174, 0, ""]
+      - [143.75, 276.723, 0, ""]
+      - [263.789, 208.756, 0, ""]
+      - [306.434, 232.951, 0, ""]
+      - [349.979, 208.112, 0, ""]
+      - [202.18, 330.592, 0, ""]
+      - [207.202, 321.068, 0, ""]
+      - [220.881, 320.549, 0, ""]
+      - [226.595, 332.15, 0, ""]
+      - [221.227, 342.02, 0, ""]
+      - [207.894, 341.154, 0, ""]
+      - [347.666, 377.447, 0, location 2, {is_parking_spot: [4, false]}]
+      - [306.482, 585.4160000000001, 0, location 1, {is_parking_spot: [4, false]}]
+      - [253.787, 275.831, 0, location 3, {is_parking_spot: [4, false]}]
+      - [259.564, 554.037, 0, ""]
+      - [258.654, 464.823, 0, ""]
+      - [259.564, 380.162, 0, ""]
+      - [435.26, 464.823, 0, ""]
+      - [436.17, 315.527, 0, ""]
+      - [373.357, 276.383, 0, ""]
+    walls:
+      - [3, 4, {alpha: [3, 1], texture_name: [1, default]}]
+      - [4, 5, {alpha: [3, 1], texture_name: [1, default]}]
+      - [5, 6, {alpha: [3, 1], texture_name: [1, default]}]
+      - [6, 7, {alpha: [3, 1], texture_name: [1, default]}]
+      - [7, 8, {alpha: [3, 1], texture_name: [1, default]}]
+      - [8, 9, {alpha: [3, 1], texture_name: [1, default]}]
+      - [9, 10, {alpha: [3, 1], texture_name: [1, default]}]
+      - [10, 11, {alpha: [3, 1], texture_name: [1, default]}]
+      - [11, 12, {alpha: [3, 1], texture_name: [1, default]}]
+      - [12, 13, {alpha: [3, 1], texture_name: [1, default]}]
+      - [13, 14, {alpha: [3, 1], texture_name: [1, default]}]
+      - [14, 15, {alpha: [3, 1], texture_name: [1, default]}]
+      - [15, 16, {alpha: [3, 1], texture_name: [1, default]}]
+      - [16, 17, {alpha: [3, 1], texture_name: [1, default]}]
+      - [17, 2, {alpha: [3, 1], texture_name: [1, default]}]
+      - [2, 3, {alpha: [3, 1], texture_name: [1, default]}]
+      - [18, 19, {alpha: [3, 1], texture_name: [1, default]}]
+      - [19, 20, {alpha: [3, 1], texture_name: [1, default]}]
+      - [20, 21, {alpha: [3, 1], texture_name: [1, default]}]
+      - [21, 22, {alpha: [3, 1], texture_name: [1, default]}]
+      - [22, 23, {alpha: [3, 1], texture_name: [1, default]}]
+      - [23, 18, {alpha: [3, 1], texture_name: [1, default]}]
+lifts:
+  {}
+name: traffic_map_test
+reference_level_name: mymap
