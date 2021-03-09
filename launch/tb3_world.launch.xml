@@ -8,20 +8,20 @@
   <include file="$(find-pkg-share free_fleet_rmf_example)/common.launch.xml">
     <arg name="use_sim_time" value="true"/>
     <arg name="viz_config_file" value ="$(find-pkg-share free_fleet_rmf_example)/include/tb3_world.rviz"/>
-    <arg name="config_file" value="$(find-pkg-share free_fleet_rmf_example)/maps/traffic_map_test.building.yaml"/>
+    <arg name="config_file" value="$(find-pkg-share free_fleet_rmf_example)/maps/tb3_world.building.yaml"/>
     <arg name="dashboard_config_file" value="$(find-pkg-share rmf_demos_dashboard_resources)/office/dashboard_config.json"/>
   </include>
 
   <!-- TinyRobot fleet adapter and robot state aggregator needed for the TinyRobot slotcar_plugin -->
   <group>
-    <let name="fleet_name" value="tinyRobot"/>
-    <include file="$(find-pkg-share demos)/include/adapters/tinyRobot_adapter.launch.xml">
+    <let name="fleet_name" value="turtlebot3"/>
+    <include file="$(find-pkg-share free_fleet_rmf_example)/tb3_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <arg name="nav_graph_file" value="$(find-pkg-share rmf_demo_maps)/maps/office/nav_graphs/0.yaml" />
+      <arg name="nav_graph_file" value="$(find-pkg-share free_fleet_rmf_example)/maps/0.yaml"/>
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
-      <arg name="robot_prefix" value="tinyRobot"/>
+      <arg name="robot_prefix" value="tb3"/>
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="true"/>
     </include>

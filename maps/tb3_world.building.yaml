@@ -1,5 +1,5 @@
 levels:
-  mymap:
+  L1:
     drawing:
       filename: world_gazebo.png
     elevation: 0
@@ -80,5 +80,5 @@ levels:
       - [23, 18, {alpha: [3, 1], texture_name: [1, default]}]
 lifts:
   {}
-name: traffic_map_test
-reference_level_name: mymap
+name: tb3_world
+reference_level_name: L1

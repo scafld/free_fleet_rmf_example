@@ -1,0 +1,6 @@
+building:
+  filename: tb3_world.building.yaml
+name: tb3_world
+traffic_maps:
+  {}
+version: 1

@@ -1,6 +1,0 @@
-building:
-  filename: traffic_map_test.building.yaml
-name: traffic_map_test
-traffic_maps:
-  {}
-version: 1
