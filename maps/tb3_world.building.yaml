@@ -17,6 +17,7 @@ levels:
       - [30, 31, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
       - [31, 32, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
       - [32, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [33, 28, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
     layers:
       map: {filename: world.png, meters_per_pixel: 0.05, rotation: 1.5719, translation_x: -13.75, translation_y: 15.2, visible: true}
     measurements:
@@ -47,7 +48,7 @@ levels:
       - [221.227, 342.02, 0, ""]
       - [207.894, 341.154, 0, ""]
       - [347.666, 377.447, 0, location 2, {is_parking_spot: [4, false]}]
-      - [306.482, 585.4160000000001, 0, location 1, {is_parking_spot: [4, false]}]
+      - [306.482, 585.4160000000001, 0, location 1, {dock_name: [1, tb3_dock], is_charger: [4, true], is_parking_spot: [4, true]}]
       - [253.787, 275.831, 0, location 3, {is_parking_spot: [4, false]}]
       - [259.564, 554.037, 0, ""]
       - [258.654, 464.823, 0, ""]
@@ -55,6 +56,7 @@ levels:
       - [435.26, 464.823, 0, ""]
       - [436.17, 315.527, 0, ""]
       - [373.357, 276.383, 0, ""]
+      - [155.125, 462, 0, "", {is_charger: [4, false]}]
     walls:
       - [3, 4, {alpha: [3, 1], texture_name: [1, default]}]
       - [4, 5, {alpha: [3, 1], texture_name: [1, default]}]

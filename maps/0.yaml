@@ -4,10 +4,10 @@ levels:
     lanes:
     - - 0
       - 1
-      - {}
+      - {undock_name: tb3_dock}
     - - 1
       - 0
-      - {}
+      - {dock_name: tb3_dock}
     - - 1
       - 2
       - {}
@@ -50,10 +50,17 @@ levels:
     - - 8
       - 7
       - {}
+    - - 9
+      - 2
+      - {}
+    - - 2
+      - 9
+      - {}
     vertices:
     - - 3.738907658014413
       - -7.141745242866353
-      - {is_parking_spot: false, name: location 1}
+      - {dock_name: tb3_dock, is_charger: true, is_parking_spot: true, name: location
+          1}
     - - 3.16653450233571
       - -6.758939128964609
       - {name: ''}
@@ -78,3 +85,6 @@ levels:
     - - 3.0960583584174723
       - -3.3649827337911313
       - {is_parking_spot: false, name: location 3}
+    - - 1.892437567131139
+      - -5.636139603639557
+      - {is_charger: false, name: ''}
