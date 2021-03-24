@@ -9,10 +9,10 @@
     <arg name="use_sim_time" value="true"/>
     <arg name="viz_config_file" value ="$(find-pkg-share free_fleet_rmf_example)/include/tb3_world.rviz"/>
     <arg name="config_file" value="$(find-pkg-share free_fleet_rmf_example)/maps/tb3_world.building.yaml"/>
-    <arg name="dashboard_config_file" value="$(find-pkg-share rmf_demos_dashboard_resources)/office/dashboard_config.json"/>
+    <arg name="dashboard_config_file" value="$(find-pkg-share free_fleet_rmf_example)/include/dashboard_config.json"/>
   </include>
 
-  <!-- TinyRobot fleet adapter and robot state aggregator needed for the TinyRobot slotcar_plugin -->
+  <!-- fleet adapter and robot state aggregator -->
   <group>
     <let name="fleet_name" value="turtlebot3"/>
     <include file="$(find-pkg-share free_fleet_rmf_example)/tb3_adapter.launch.xml">
@@ -26,5 +26,8 @@
       <arg name="use_sim_time" value="true"/>
     </include>
   </group>
+
+  <!-- rosbridge to bridge the ROS1 gazebo clock source to ROS2 nodes -->
+  <node pkg="ros1_bridge" exec="dynamic_bridge" output="both"/>
 
 </launch>
